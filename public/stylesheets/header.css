@@ -1,0 +1,69 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 32px;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#222;
+}
+
+.logo-box{
+    width:28px;
+    height:28px;
+    border-radius:4px;
+    background:linear-gradient(135deg,#c9b6e8,#f3e3bb);
+}
+
+.logo-text{
+    font-size:18px;
+    font-weight:600;
+}
+
+.desktop-menu{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav{
+    display:flex;
+    gap:12px;
+}
+
+.nav a,
+.whatsapp-btn{
+    text-decoration:none;
+    color:#555;
+    padding:8px 16px;
+    border:1px solid #ddd;
+    border-radius:24px;
+    transition:.3s;
+}
+
+.nav a:hover,
+.whatsapp-btn:hover{
+    background:#f7f7f7;
+}
+
+.menu-btn{
+    display:none;
+    border:none;
+    background:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.mobile-menu{
+    display:none;
+}

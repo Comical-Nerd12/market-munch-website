@@ -1,0 +1,120 @@
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+    </script>
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/images/itgw.png" sizes="32x32">
+<%- include("header") %>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<link rel="stylesheet" href="/stylesheets/prices.css">
+<title>Ifthisgoeswrong | Legal Documents for Startups, Creators & Freelancers</title>
+
+<div class="pricing-page">
+
+    <!-- Hero -->
+    <section class="pricing-hero">
+
+        <h1>Pricing</h1>
+
+        <p>
+            Choose your category and preferred turnaround time.
+        </p>
+
+    </section>
+
+    <!-- Category -->
+    <section class="category-tabs">
+
+        <button class="active" data-category="freelancers">
+            Freelancers
+        </button>
+
+        <button data-category="creators">
+            Creators
+        </button>
+
+        <button data-category="startups">
+            Startups
+        </button>
+
+    </section>
+
+    <!-- Urgency -->
+    <section class="urgency-tabs">
+
+        <p>Select Turnaround</p>
+
+        <div class="urgency-buttons">
+
+            <button class="active" data-speed="standard">
+                Standard ( 6-7 Days)
+            </button>
+
+            <button data-speed="urgent">
+                Priority ( 72 Hours)
+            </button>
+
+            <button data-speed="express">
+                Express (24 Hours)
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Cards -->
+    <section id="priceCards" class="price-grid">
+
+    </section>
+
+    <!-- Comparison -->
+    <section class="comparison" id="comparisonBox">
+
+        <h3>What's included?</h3>
+
+        <div class="accordion-content show">
+
+            <ul>
+
+                <li>✔ Professionally drafted by legal experts</li>
+
+                <li>✔ One revision included</li>
+
+                <li>✔ WhatsApp support throughout</li>
+
+                <li>✔ Ready-to-use document in PDF & DOCX</li>
+
+                <li>✔ Fast turnaround based on selected plan</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="bottom-cta">
+
+        <h3>Not sure which document you need?</h3>
+
+        <p>
+            Tell us your situation and we'll recommend the right legal solution.
+        </p>
+
+        <a
+            href="https://wa.me/919996796697?text=Hi! I need help choosing the right legal document."
+            target="_blank">
+
+            Chat on WhatsApp
+
+        </a>
+
+    </section>
+
+</div>
+
+<script src="/javascripts/prices.js"></script>
+
+<%- include("footer") %>

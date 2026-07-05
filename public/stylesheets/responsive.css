@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@media (max-width:768px){
+
+.header{
+    padding:15px 20px;
+}
+
+.desktop-menu{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.mobile-menu{
+    display:none;
+    flex-direction:column;
+    background:#fff;
+    border-top:1px solid #eee;
+}
+
+.mobile-menu.show{
+    display:flex;
+}
+
+.mobile-menu a{
+    padding:16px 20px;
+    text-decoration:none;
+    color:#555;
+    border-bottom:1px solid #eee;
+}
+
+.mobile-menu a:hover{
+    background:#fafafa;
+}
+
+}
+
+/* Tablets */
+@media (max-width:900px){
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+/* Phones */
+@media (max-width:768px){
+
+    /* ---------- Header ---------- */
+
+    .header{
+        padding:15px 20px;
+    }
+
+    .desktop-menu{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .mobile-menu{
+        display:none;
+        flex-direction:column;
+        background:#fff;
+        border-top:1px solid #eee;
+    }
+
+    .mobile-menu.show{
+        display:flex;
+    }
+
+    .mobile-menu a{
+        padding:16px 20px;
+        text-decoration:none;
+        color:#555;
+        border-bottom:1px solid #eee;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero-title{
+        font-size:30px;
+    }
+
+    .hero-description{
+        font-size:14px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
+    /* ---------- Cards ---------- */
+
+    .cards{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    /* ---------- Sections ---------- */
+
+    .documents,
+    .benefits,
+    .cta{
+        padding:40px 20px;
+    }
+
+    /* ---------- Benefits ---------- */
+
+    .benefit-grid{
+        grid-template-columns:1fr;
+    }
+
+}
