@@ -2,32 +2,38 @@ const services = [
     {
         icon: "ti ti-brand-google",
         title: "SEO Optimization",
-        desc: "Rank higher on Google and drive consistent organic traffic."
+        desc: "Rank higher on Google and drive consistent organic traffic.",
+        link:"/services/seo-optimization"
     },
     {
         icon: "ti ti-speakerphone",
         title: "Social Media Marketing",
-        desc: "Grow your audience across Instagram, Facebook and LinkedIn."
+        desc: "Grow your audience across Instagram, Facebook and LinkedIn.",
+        link:"/services/socialmediamarketing"
     },
     {
         icon: "ti ti-click",
         title: "Performance Marketing",
-        desc: "High-converting Meta and Google Ads with measurable ROI."
+        desc: "High-converting Meta and Google Ads with measurable ROI.",
+        link:"/services/performance-marketing"
     },
     {
         icon: "ti ti-pencil",
         title: "Content Creation",
-        desc: "Creative content that attracts, engages and converts."
+        desc: "Creative content that attracts, engages and converts.",
+        link:"/services/content-creation"
     },
     {
         icon: "ti ti-chart-bar",
         title: "Analytics",
-        desc: "Track every click, lead and conversion with detailed reports."
+        desc: "Track every click, lead and conversion with detailed reports.",
+        link:"/services/analytics"
     },
     {
         icon: "ti ti-device-desktop",
         title: "Website Development",
-        desc: "Modern responsive websites designed to convert visitors."
+        desc: "Modern responsive websites designed to convert visitors.",
+        link:"/services/web-development"
     }
 ];
 
@@ -56,19 +62,34 @@ const process = [
 
 const testimonials = [
     {
-        name:"Rahul Sharma",
-        company:"Founder, TechNest",
-        review:"Market Munch increased our leads by 270% within three months."
+        name:"Sumit Malik",
+        company:"The imagination creatives",
+        review:"Working with Market Munch completely changed our online presence. Their SEO and marketing strategy brought in more qualified leads within weeks, and communication throughout the project was excellent."
     },
     {
-        name:"Sneha Kapoor",
-        company:"Fashion Creator",
-        review:"Our Instagram engagement doubled and sales followed."
+        name:"Varun Dua",
+        company:"Barkha International",
+        review:"We wanted more than just a beautiful website—we wanted results. The team delivered a modern website along with a marketing strategy that genuinely helped us reach new customers."
     },
     {
-        name:"Aman Verma",
-        company:"Cafe Owner",
-        review:"Professional team. Transparent reporting and amazing ROI."
+        name:"Mayank Jain",
+        company:"Jain ki Dukan",
+        review:"Market Munch didn't just promise growth—they showed us the numbers behind every decision. Their transparency and creativity really stood out."
+    },
+    {
+        name:"Tanu Ahuja",
+        company:"Jogan Couture",
+        review:"Professional, creative, and incredibly easy to work with. Every campaign was backed by data, and we finally understood where our marketing budget was going."
+    },
+    {
+        name:"Dr. Vineet Arya",
+        company:"Dev Eye Care",
+        review:"We've worked with multiple agencies before, but Market Munch was the first to make marketing feel collaborative instead of confusing."
+    },
+    {
+        name:"Prachi Gawri",
+        company:"Homadorn",
+        review:"Their attention to detail and willingness to adapt to feedback made the entire experience smooth. We'd happily recommend them to other businesses."
     }
 ];
 
@@ -93,92 +114,86 @@ const portfolio = [
 const homePage = `
 <div class="home">
 
-<section class="hero">
+<section class="founders-section">
 
-<div class="hero-left">
-<div class="hero-tag">
+    <div class="founders-heading">
 
-    <img src="/images/logo.jpeg" alt="Market Munch Logo" class="hero-logo">
+        <p class="small-text">
+            MARKET MUNCH
+        </p>
 
-    <span>Market Munch</span>
+        <h1>
+            You found us.
+        </h1>
 
-</div>
+        <h2>
+            Now let's make sure your customers find you too.
+        </h2>
 
-<h1 class="hero-title">
-Grow Faster.<br>
-Market Smarter.
-</h1>
+    </div>
 
-<p class="hero-description">
-Market Munch helps brands dominate online through SEO,
-performance marketing, content creation and powerful
-digital strategies that actually generate revenue.
-</p>
+    
+    <div class="founders-divider">
 
-<div class="hero-buttons">
+    <div class="divider-line"></div>
 
-<button class="btn-primary" onclick="scrollServices()">
-Explore Services
-</button>
+    <p>
+        Let's meet the people behind the ideas.
+    </p>
 
-<a
-class="btn-secondary"
-href="https://wa.me/919996796697"
-target="_blank">
-Let's Talk
-</a>
+    <div class="divider-line"></div>
 
 </div>
 
-<div class="hero-stats">
+<div class="founders-container">
 
-<div class="stat">
-<h2>120+</h2>
-<p>Projects</p>
-</div>
 
-<div class="stat">
-<h2>98%</h2>
-<p>Client Satisfaction</p>
-</div>
+    <div class="founder-card orange-card active-card">
 
-<div class="stat">
-<h2>15</h2>
-<p>Million Reach</p>
-<p>Reach Generated</p>
-</div>
+        <div class="gradient-circle"></div>
 
-</div>
+        <img src="/images/anjali.png" alt="Founder">
 
-</div>
+        <span>Co-Founder</span>
 
-<div class="hero-right">
+        <h3>Anjali Choudhary</h3>
 
-<div class="dashboard">
+        <p>
+            Helping businesses grow with modern marketing,
+            branding and scalable digital strategies.
+        </p>
 
-<div class="graph">
-<div class="bar b1"></div>
-<div class="bar b2"></div>
-<div class="bar b3"></div>
-<div class="bar b4"></div>
-<div class="arrow"></div>
-</div>
+        <a href="#">Connect →</a>
 
-<div class="dashboard-card">
+    </div>
 
-<h3>Growth Overview</h3>
+    <div class="founder-card orange-card">
 
-<h1>+125%</h1>
+        <div class="gradient-circle"></div>
 
-<p>vs last month</p>
+        <img src="/images/kamal.jpeg" alt="Founder">
 
-</div>
+        <span>Co-Founder</span>
 
-</div>
+        <h3>Kamal</h3>
+
+        <p>
+            Focused on creative campaigns,
+            content and performance that actually
+            converts visitors into customers.
+        </p>
+
+        <a href="#">Connect →</a>
+
+    </div>
+
 
 </div>
 
 </section>
+
+
+   
 
 <section class="clients">
 
@@ -201,6 +216,13 @@ TRUSTED FOR GROWTH
 </div>
 
 </section>
+
+ <div class="showcase-image">
+
+        <img src="/images/dashboard1.png"
+             alt="Market Munch Dashboard">
+
+    </div>
 
 <section class="services" id="services">
 
@@ -230,7 +252,7 @@ ${service.title}
 ${service.desc}
 </p>
 
-<a href="#">
+<a href="${service.link}">
 Learn More →
 </a>
 
@@ -239,6 +261,34 @@ Learn More →
 `).join("")}
 
 </div>
+
+</section>
+
+<section class="showcase">
+
+    <div class="showcase-content">
+
+        <p class="section-small">
+            SEE THE DIFFERENCE
+        </p>
+
+        <h2>
+            Marketing That Looks As Good As It Performs
+        </h2>
+
+        <p>
+            From social media campaigns to analytics dashboards, we create
+            digital experiences that attract attention and drive measurable growth.
+        </p>
+
+    </div>
+
+    <div class="showcase-image">
+
+        <img src="/images/dashboard.png"
+             alt="Market Munch Dashboard">
+
+    </div>
 
 </section>
 
@@ -328,6 +378,13 @@ ${portfolio.map(item=>`
 </div>
 
 </section>
+
+<div class="showcase-image">
+
+        <img src="/images/dashboard2.png"
+             alt="Market Munch Dashboard">
+
+    </div>
 
 <section class="process">
 
@@ -501,7 +558,7 @@ ${portfolio.map(item=>`
 
         <a
         class="btn-secondary"
-        href="https://wa.me/919996796697"
+        href="https://wa.me/919350223775"
         target="_blank">
 
             Let's Talk
@@ -512,33 +569,7 @@ ${portfolio.map(item=>`
 
 </section>
 
-<footer class="footer">
 
-    <div class="footer-logo">
-
-        MARKET MUNCH
-
-    </div>
-
-    <div class="footer-links">
-
-        <a href="/">Home</a>
-
-        <a href="/services">Services</a>
-
-        <a href="/pricing">Pricing</a>
-
-        <a href="/contact">Contact</a>
-
-    </div>
-
-    <p>
-
-        © 2026 Market Munch. All Rights Reserved.
-
-    </p>
-
-</footer>
 
 </div>
 `;
@@ -575,68 +606,16 @@ questions.forEach(question=>{
 
 });
 
-/* ---------- Counter Animation ---------- */
-
-const counters = document.querySelectorAll(".stat h2");
-
-let started = false;
-
-window.addEventListener("scroll",()=>{
-
-    if(started) return;
-
-    const stats = document.querySelector(".hero-stats");
-
-    if(stats.getBoundingClientRect().top < window.innerHeight-100){
-
-        started = true;
-
-        counters.forEach(counter=>{
-
-            const finalValue = counter.innerText;
-
-            const number = parseInt(finalValue);
-
-            if(isNaN(number)) return;
-
-            let current = 0;
-
-            const increment = Math.ceil(number/40);
-
-            const interval = setInterval(()=>{
-
-                current += increment;
-
-                if(current>=number){
-
-                    counter.innerText = finalValue;
-
-                    clearInterval(interval);
-
-                }
-                else{
-
-                    counter.innerText = current+"+";
-
-                }
-
-            },30);
-
-        });
-
-    }
-
-});
-
 /* ---------- Reveal Animation ---------- */
 
-const observer = new IntersectionObserver(entries=>{
+const observer = new IntersectionObserver((entries) => {
 
-    entries.forEach(entry=>{
+    entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
             entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
 
         }
 
@@ -647,12 +626,14 @@ const observer = new IntersectionObserver(entries=>{
 });
 
 document.querySelectorAll(
-
-".service-card,.why-card,.portfolio-card,.process-card,.testimonial-card"
-
-).forEach(card=>{
-
-    observer.observe(card);
-
-});
+`
+.service-card,
+.why-card,
+.portfolio-card,
+.process-card,
+.testimonial-card,
+.faq-item,
+.cta
+`
+).forEach(el => observer.observe(el));
 

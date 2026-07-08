@@ -1,61 +1,81 @@
 <link rel="stylesheet" href="/stylesheets/header.css">
 <link rel="stylesheet" href="/stylesheets/responsive.css">
+
 <header class="header">
 
-    <!-- Logo -->
     <a href="/" class="logo">
-        <div class="logo-box"></div>
-        <span class="logo-text">IfThisGoesWrong</span>
+
+        <img src="/images/logo.jpeg" alt="Market Munch" class="logo-img">
+
+        <span class="logo-text">
+            MARKET MUNCH
+        </span>
+
     </a>
 
-    <!-- Desktop Navigation -->
     <div class="desktop-menu">
 
         <nav class="nav">
+
             <a href="/">Home</a>
-            <a href="/prices">Prices</a>
+
+
+            <a href="/plans">Plans</a>
+
             <a href="/about">About</a>
+
         </nav>
 
         <a
-            href="https://wa.me/919996796697?text=Hi!%20I%20need%20help%20with%20a%20legal%20notice."
+            href="https://wa.me/919350223775"
             target="_blank"
-            class="whatsapp-btn"
-        >
+            class="contact-btn">
+
             <i class="ti ti-brand-whatsapp"></i>
-            WhatsApp Us
+
+            Free Consultation
+
         </a>
 
     </div>
 
-    <!-- Mobile Hamburger -->
     <button class="menu-btn" onclick="toggleMenu()">
+
         <i class="ti ti-menu-2"></i>
+
     </button>
 
 </header>
 
-<!-- Mobile Menu -->
+
 <div class="mobile-menu" id="mobileMenu">
 
     <a href="/">Home</a>
 
-    <a href="/prices">Prices</a>
+    <a href="/plans">Plans</a>
 
     <a href="/about">About</a>
 
+
     <a
-        href="https://wa.me/919996796697?text=Hi!%20I%20need%20help%20with%20a%20legal%20notice."
+        href="https://wa.me/919350223775"
         target="_blank"
-    >
+        class="mobile-btn">
+
         <i class="ti ti-brand-whatsapp"></i>
-        WhatsApp Us
+
+        Free Consultation
+
     </a>
 
 </div>
 
 <script>
+
 function toggleMenu(){
+
     document.getElementById("mobileMenu").classList.toggle("show");
+
 }
+
 </script>

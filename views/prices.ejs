@@ -1,113 +1,396 @@
-  <link
+<link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
-    </script>
-    <link rel="icon" href="/images/favicon.ico" sizes="any">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="icon" href="/images/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/images/itgw.png" sizes="32x32">
+
 <%- include("header") %>
-<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <link rel="stylesheet" href="/stylesheets/prices.css">
-<title>Ifthisgoeswrong | Legal Documents for Startups, Creators & Freelancers</title>
+
+<title>Pricing | Market Munch</title>
 
 <div class="pricing-page">
 
     <!-- Hero -->
+
     <section class="pricing-hero">
 
-        <h1>Pricing</h1>
+       <br>
+       <br>
+       <br>
+        <h1>
+            Simple Pricing for
+            Growing Businesses
+        </h1>
 
         <p>
-            Choose your category and preferred turnaround time.
+            Whether you're just starting or scaling rapidly, choose a marketing
+            plan that fits your business goals.
         </p>
 
     </section>
 
-    <!-- Category -->
-    <section class="category-tabs">
 
-        <button class="active" data-category="freelancers">
-            Freelancers
-        </button>
+    <!-- Pricing Cards -->
 
-        <button data-category="creators">
-            Creators
-        </button>
+    <section class="pricing-grid">
 
-        <button data-category="startups">
-            Startups
-        </button>
+        <!-- Basic -->
 
-    </section>
+        <div class="pricing-card">
 
-    <!-- Urgency -->
-    <section class="urgency-tabs">
+            <h3>Basic</h3>
 
-        <p>Select Turnaround</p>
+            <p class="plan-text">
+                Perfect for startups and small businesses.
+            </p>
 
-        <div class="urgency-buttons">
+            <ul>
 
-            <button class="active" data-speed="standard">
-                Standard ( 6-7 Days)
-            </button>
+                <li><i class="ti ti-check"></i> Social Media Management</li>
 
-            <button data-speed="urgent">
-                Priority ( 72 Hours)
-            </button>
+                <li><i class="ti ti-check"></i> 8 Posts / Month</li>
 
-            <button data-speed="express">
-                Express (24 Hours)
-            </button>
+                <li><i class="ti ti-check"></i> Basic SEO</li>
+
+                <li><i class="ti ti-check"></i> Google Business Profile</li>
+
+                <li><i class="ti ti-check"></i> Monthly Performance Report</li>
+
+                <li><i class="ti ti-check"></i> Email Support</li>
+
+            </ul>
+
+            <a href="https://wa.me/919996796697?text=Hi! I'm interested in your Basic Plan."
+target="_blank">
+    Get Started
+</a>
 
         </div>
 
-    </section>
+        <!-- Pro -->
 
-    <!-- Cards -->
-    <section id="priceCards" class="price-grid">
+        <div class="pricing-card featured">
+
+            <div class="popular">
+
+                Most Popular
+
+            </div>
+
+            <h3>Pro</h3>
+
+            <p class="plan-text">
+
+                Best for businesses ready to grow faster.
+
+            </p>
+
+
+            <ul>
+
+                <li><i class="ti ti-check"></i> Everything in Basic</li>
+
+                <li><i class="ti ti-check"></i> 16 Social Posts</li>
+
+                <li><i class="ti ti-check"></i> Advanced SEO</li>
+
+                <li><i class="ti ti-check"></i> Google Ads Management</li>
+
+                <li><i class="ti ti-check"></i> Meta Ads Campaigns</li>
+
+                <li><i class="ti ti-check"></i> Landing Page Optimization</li>
+
+                <li><i class="ti ti-check"></i> Weekly Reports</li>
+
+                <li><i class="ti ti-check"></i> Priority Support</li>
+
+            </ul>
+
+          <a href="https://wa.me/919996796697?text=Hi! I'm interested in your Pro Plan."
+target="_blank">
+    Get Started
+</a>
+        </div>
+
+        <!-- Advanced -->
+
+        <div class="pricing-card">
+
+            <h3>Advanced</h3>
+
+            <p class="plan-text">
+
+                Complete digital marketing solution.
+
+            </p>
+
+          
+
+            <ul>
+
+                <li><i class="ti ti-check"></i> Everything in Pro</li>
+
+                <li><i class="ti ti-check"></i> Unlimited Creatives</li>
+
+                <li><i class="ti ti-check"></i> Complete SEO Strategy</li>
+
+                <li><i class="ti ti-check"></i> PPC Campaign Management</li>
+
+                <li><i class="ti ti-check"></i> Conversion Optimization</li>
+
+                <li><i class="ti ti-check"></i> Dedicated Marketing Manager</li>
+
+                <li><i class="ti ti-check"></i> Weekly Strategy Meetings</li>
+
+                <li><i class="ti ti-check"></i> Premium Priority Support</li>
+
+            </ul>
+
+            <a  href="https://wa.me/919996796697?text=Hi! I'm interested in your advanced plan."
+            target="_blank">
+                Get Started
+            </a>
+
+        </div>
 
     </section>
 
     <!-- Comparison -->
-    <section class="comparison" id="comparisonBox">
 
-        <h3>What's included?</h3>
+    <section class="comparison-section">
 
-        <div class="accordion-content show">
+        <h2>
 
-            <ul>
+            Compare Plans
 
-                <li>✔ Professionally drafted by legal experts</li>
+        </h2>
 
-                <li>✔ One revision included</li>
+        <table>
 
-                <li>✔ WhatsApp support throughout</li>
+            <thead>
 
-                <li>✔ Ready-to-use document in PDF & DOCX</li>
+                <tr>
 
-                <li>✔ Fast turnaround based on selected plan</li>
+                    <th>Features</th>
 
-            </ul>
+                    <th>Basic</th>
 
-        </div>
+                    <th>Pro</th>
+
+                    <th>Advanced</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>SEO</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Social Media Management</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Google Ads</td>
+
+                    <td>—</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Meta Ads</td>
+
+                    <td>—</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Landing Page Optimization</td>
+
+                    <td>—</td>
+
+                    <td>✔</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Dedicated Manager</td>
+
+                    <td>—</td>
+
+                    <td>—</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Weekly Meetings</td>
+
+                    <td>—</td>
+
+                    <td>—</td>
+
+                    <td>✔</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
 
     </section>
 
-    <!-- CTA -->
-    <section class="bottom-cta">
+    <!-- FAQ -->
 
-        <h3>Not sure which document you need?</h3>
+    <!-- FAQ -->
+
+<section class="pricing-faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="faq-subtitle">
+        Everything you need to know before partnering with Market Munch.
+    </p>
+
+    <div class="faq">
+
+        <h4>How do I choose the right plan?</h4>
 
         <p>
-            Tell us your situation and we'll recommend the right legal solution.
+            Every business has different goals. If you're unsure, schedule a
+            free consultation and we'll recommend the best package based on
+            your business, industry, and budget.
+        </p>
+
+    </div>
+
+    <div class="faq">
+
+        <h4>Can I upgrade or downgrade my plan later?</h4>
+
+        <p>
+            Absolutely. As your business grows, you can upgrade or change your
+            plan at any time without interrupting your ongoing campaigns.
+        </p>
+
+    </div>
+
+    <div class="faq">
+
+        <h4>Do you require long-term contracts?</h4>
+
+        <p>
+            No. Our services are designed to be flexible. Most plans operate on
+            a monthly basis, giving you the freedom to scale as your business
+            evolves.
+        </p>
+
+    </div>
+
+    <div class="faq">
+
+        <h4>Do you offer custom marketing packages?</h4>
+
+        <p>
+            Yes. If our standard plans don't match your requirements, we'll
+            create a customized marketing strategy tailored specifically to
+            your business objectives.
+        </p>
+
+    </div>
+
+    <div class="faq">
+
+        <h4>When will I start seeing results?</h4>
+
+        <p>
+            Results depend on the service. Paid advertising can generate leads
+            quickly, while SEO and organic growth typically show significant
+            improvements over several months. We provide regular reports so you
+            can track progress every step of the way.
+        </p>
+
+    </div>
+
+    <div class="faq">
+
+        <h4>How will we communicate during the project?</h4>
+
+        <p>
+            You'll receive regular updates, performance reports, and direct
+            support through WhatsApp, email, or scheduled meetings, depending
+            on your selected plan.
+        </p>
+
+    </div>
+
+</section>
+    <!-- CTA -->
+
+    <section class="bottom-cta">
+
+        <h2>
+
+            Need Something Custom?
+
+        </h2>
+
+        <p>
+
+            Every business is different. Let's create a marketing strategy that's built specifically for your goals.
+
         </p>
 
         <a
-            href="https://wa.me/919996796697?text=Hi! I need help choosing the right legal document."
+            href="https://wa.me/919996796697?text=Hi! I'm interested in your digital marketing services."
             target="_blank">
 
-            Chat on WhatsApp
+            Book Free Consultation
 
         </a>
 
@@ -115,6 +398,6 @@
 
 </div>
 
-<script src="/javascripts/prices.js"></script>
+<!-- <script src="/javascripts/prices.js"></script> -->
 
 <%- include("footer") %>

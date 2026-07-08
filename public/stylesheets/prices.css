@@ -1,345 +1,945 @@
+/* ===========================
+        PRICING PAGE
+===========================*/
+
 .pricing-page{
-    max-width:1200px;
-    margin:50px auto;
-    padding:0 20px;
+    width:100%;
+    max-width:1300px;
+    margin:70px auto;
+    padding:0 24px;
+    color:var(--text);
 }
 
-/* Hero */
+/* ===========================
+          HERO
+===========================*/
 
 .pricing-hero{
     text-align:center;
-    margin-bottom:45px;
+    max-width:760px;
+    margin:0 auto 70px;
+}
+
+.pricing-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    background:rgba(139,92,246,.12);
+
+    border:1px solid rgba(139,92,246,.25);
+
+    color:#b69cff;
+
+    font-size:.82rem;
+
+    letter-spacing:1px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
 }
 
 .pricing-hero h1{
-    font-size:48px;
-    font-family:var(--font-voice);
-    margin-bottom:12px;
+
+    font-size:clamp(2.8rem,6vw,4.6rem);
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    margin-bottom:22px;
+
+    color:white;
+
 }
 
 .pricing-hero p{
-    color:#666;
-    font-size:15px;
-}
 
-/* Category */
+    color:var(--text2);
 
-.category-tabs{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-bottom:35px;
-}
+    font-size:1.08rem;
 
-.category-tabs button{
-
-    padding:12px 28px;
-    border-radius:30px;
-    border:1px solid #ddd;
-    background:white;
-    cursor:pointer;
-    transition:.3s;
-    font-size:14px;
+    line-height:1.8;
 
 }
 
-.category-tabs button:hover{
+/* ===========================
+      BILLING TOGGLE
+===========================*/
 
-    transform:translateY(-2px);
-
-}
-
-.category-tabs button.active{
-
-    background:#222;
-    color:white;
-    border-color:#222;
-
-}
-
-/* Turnaround */
-
-.urgency-tabs{
-
-    text-align:center;
-    margin-bottom:45px;
-
-}
-
-.urgency-tabs p{
-
-    color:#777;
-    margin-bottom:18px;
-
-}
-
-.urgency-buttons{
+.billing-toggle{
 
     display:flex;
+
     justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:70px;
 
 }
 
-.urgency-buttons button{
+.billing-toggle button{
 
-    padding:12px 25px;
-    border-radius:30px;
-    border:1px solid #ddd;
-    background:white;
+    padding:14px 32px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:var(--card);
+
+    color:var(--text2);
+
     cursor:pointer;
-    transition:.3s;
+
+    transition:.35s;
+
+    font-weight:600;
 
 }
 
-.urgency-buttons button:hover{
+.billing-toggle button:hover{
 
-    transform:translateY(-2px);
+    transform:translateY(-3px);
+
+    border-color:var(--primary);
 
 }
 
-.urgency-buttons button.active{
+.billing-toggle button.active{
 
-    background:#a08fc4;
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary2)
+    );
+
     color:white;
-    border-color:#a08fc4;
+
+    box-shadow:0 10px 30px rgba(139,92,246,.35);
 
 }
 
-/* Cards */
+.billing-toggle span{
 
-.price-grid{
+    margin-left:6px;
+
+    background:#18b86d;
+
+    color:white;
+
+    font-size:.72rem;
+
+    padding:3px 8px;
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+        PRICING GRID
+===========================*/
+
+.pricing-grid{
 
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:22px;
-    margin-bottom:45px;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-bottom:90px;
 
 }
 
-.price-card{
+/* ===========================
+        PRICING CARD
+===========================*/
 
-    border:1px solid #eee;
-    border-radius:18px;
-    padding:25px;
-    background:white;
-    transition:.3s;
+.pricing-card{
+
+    position:relative;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px 34px;
+
+    transition:.4s;
+
+    overflow:hidden;
 
 }
 
-.price-card:hover{
+.pricing-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+}
 
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+.pricing-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(139,92,246,.35);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.35);
 
 }
 
-.price-card h3{
+.pricing-card:hover::before{
 
-    font-size:21px;
+    opacity:1;
+
+}
+
+.pricing-card h3{
+
+    font-size:1.8rem;
+
     margin-bottom:10px;
 
-}
-
-.price-card p{
-
-    color:#777;
-    line-height:1.5;
-    margin-bottom:30px;
+    color:white;
 
 }
 
-.price-bottom{
+.plan-text{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    color:var(--text2);
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+    min-height:55px;
 
 }
 
 .price{
 
-    font-size:34px;
-    font-weight:bold;
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:5px;
+
+    margin-bottom:35px;
+
+    color:white;
+
+    font-size:3.3rem;
+
+    font-weight:800;
 
 }
 
-.revision{
+.price span{
 
-    padding:10px 18px;
-    border-radius:30px;
-    background:#f5f2ea;
-    color:#666;
-    font-size:13px;
+    font-size:1rem;
 
-}
+    color:var(--text2);
 
-/* Comparison */
-
-.comparison{
-
-    background:#faf7ff;
-    border:1px solid #ece7fa;
-    border-radius:18px;
-    padding:35px;
-    margin-bottom:50px;
+    margin-bottom:10px;
 
 }
 
-.comparison h3{
+/* ===========================
+          FEATURES
+===========================*/
 
-    text-align:center;
-    margin-bottom:25px;
-
-}
-
-.accordion-content ul{
+.pricing-card ul{
 
     list-style:none;
+
     padding:0;
-    margin:0;
+
+    margin:0 0 40px;
 
 }
 
-.accordion-content li{
+.pricing-card li{
 
-    padding:14px 0;
-    border-bottom:1px solid #eee;
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:13px 0;
+
+    color:var(--text2);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
 
 }
 
-.accordion-content li:last-child{
+.pricing-card li:last-child{
 
-    border-bottom:none;
+    border:none;
 
 }
 
-/* CTA */
+.pricing-card li i{
+
+    color:#7c5cff;
+
+    font-size:1.1rem;
+
+}
+
+/* ===========================
+        BUTTON
+===========================*/
+
+.pricing-card a{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.pricing-card a:hover{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary2)
+    );
+
+    border-color:transparent;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+      FEATURED CARD
+===========================*/
+
+.featured{
+
+    transform:scale(1.05);
+
+    border:1px solid rgba(139,92,246,.35);
+
+    background:linear-gradient(
+        180deg,
+        rgba(139,92,246,.12),
+        rgba(255,255,255,.03)
+    );
+
+    box-shadow:0 25px 60px rgba(139,92,246,.28);
+
+}
+
+.featured:hover{
+
+    transform:scale(1.05) translateY(-12px);
+
+}
+
+.popular{
+
+    position:absolute;
+
+    top:20px;
+
+    right:-45px;
+
+    width:180px;
+
+    text-align:center;
+
+    padding:8px 0;
+
+    transform:rotate(45deg);
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary2)
+    );
+
+    color:white;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    box-shadow:0 5px 18px rgba(139,92,246,.35);
+
+}
+
+/* ======================================
+        COMPARISON SECTION
+====================================== */
+
+.comparison-section{
+
+    margin:100px 0;
+
+}
+
+.comparison-section h2{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    margin-bottom:50px;
+
+    color:var(--text);
+
+}
+
+.comparison-section table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:var(--card);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.comparison-section th{
+
+    padding:22px;
+
+    background:rgba(255,255,255,.04);
+
+    color:var(--text);
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    text-align:center;
+
+}
+
+.comparison-section td{
+
+    padding:20px;
+
+    text-align:center;
+
+    color:var(--text2);
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.comparison-section td:first-child{
+
+    text-align:left;
+
+    font-weight:600;
+
+    color:white;
+
+}
+
+.comparison-section tr:hover{
+
+    background:rgba(255,255,255,.03);
+
+}
+
+/* ======================================
+              FAQ
+====================================== */
+
+/* ======================================
+                FAQ
+====================================== */
+
+.pricing-faq{
+
+    max-width:1000px;
+
+    margin:120px auto;
+
+}
+
+.pricing-faq h2{
+
+    text-align:center;
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    color:white;
+
+    margin-bottom:18px;
+
+}
+
+.pricing-faq>p{
+
+    text-align:center;
+
+    color:var(--text2);
+
+    max-width:600px;
+
+    margin:0 auto 55px;
+
+    line-height:1.8;
+
+}
+
+.faq{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:rgba(192, 27, 234, 0.03);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:22px;
+
+    transition:.35s ease;
+
+}
+
+.faq::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:linear-gradient(
+        180deg,
+        var(--primary),
+        var(--primary2)
+    );
+
+    transform:scaleY(0);
+
+    transform-origin:top;
+
+    transition:.35s;
+
+}
+
+.faq:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(139,92,246,.35);
+
+    box-shadow:0 25px 50px rgba(139,92,246,.18);
+
+}
+.faq-subtitle{
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:0 auto 55px;
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+.faq:hover::before{
+
+    transform:scaleY(1);
+
+}
+
+.faq h4{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:1.15rem;
+
+    margin-bottom:16px;
+
+}
+
+.faq h4::after{
+
+    content:"+";
+
+    font-size:1.6rem;
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.faq:hover h4::after{
+
+    transform:rotate(45deg);
+
+}
+
+.faq p{
+
+    color:var(--text2);
+
+    line-height:1.9;
+
+    font-size:.98rem;
+
+}
+/* ======================================
+            CTA SECTION
+====================================== */
 
 .bottom-cta{
 
+    margin:100px 0 40px;
+
+    padding:70px 50px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(139,92,246,.15),
+        rgba(168,85,247,.08)
+    );
+
+    border:1px solid rgba(139,92,246,.25);
+
     text-align:center;
-    background:white;
-    border:1px solid #eee;
-    border-radius:18px;
-    padding:45px;
-    margin-bottom:50px;
 
 }
 
-.bottom-cta h3{
+.bottom-cta h2{
 
-    margin-bottom:12px;
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+
+    color:white;
 
 }
 
 .bottom-cta p{
 
-    color:#666;
-    margin-bottom:28px;
+    max-width:720px;
+
+    margin:0 auto 35px;
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+    font-size:1.05rem;
 
 }
 
 .bottom-cta a{
 
-    display:inline-block;
-    padding:14px 35px;
-    border-radius:30px;
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 42px;
+
+    border-radius:999px;
+
     text-decoration:none;
-    color:#222;
-    background:linear-gradient(135deg,#c9b6e8,#f3e3bb);
-    transition:.3s;
+
+    color:white;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary2)
+    );
+
+    transition:.35s;
+
+    box-shadow:0 18px 40px rgba(139,92,246,.30);
 
 }
 
 .bottom-cta a:hover{
 
-    transform:translateY(-3px);
-    box-shadow:0 12px 30px rgba(160,143,196,.35);
+    transform:translateY(-5px);
+
+    box-shadow:0 25px 55px rgba(139,92,246,.45);
 
 }
 
-/* Responsive */
+/* ======================================
+        TABLET
+====================================== */
 
-@media(max-width:900px){
+@media(max-width:1100px){
 
-    .price-grid{
+    .pricing-grid{
 
-        grid-template-columns:1fr;
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .featured{
+
+        transform:none;
+
+    }
+
+    .featured:hover{
+
+        transform:translateY(-10px);
 
     }
 
 }
+
+/* ======================================
+        MOBILE
+====================================== */
 
 @media(max-width:768px){
 
+    .pricing-page{
+
+        padding:0 18px;
+
+    }
+
+    .pricing-hero{
+
+        margin-bottom:50px;
+
+    }
+
     .pricing-hero h1{
 
-        font-size:36px;
+        font-size:2.6rem;
 
     }
 
-    .category-tabs{
+    .pricing-hero p{
+
+        font-size:1rem;
+
+    }
+
+    .billing-toggle{
 
         flex-direction:column;
-        align-items:center;
 
     }
 
-    .category-tabs button{
+    .billing-toggle button{
 
-        width:240px;
+        width:100%;
 
-    }
-
-    .urgency-buttons{
-
-        flex-direction:column;
-        align-items:center;
+        max-width:260px;
 
     }
 
-    .urgency-buttons button{
+    .pricing-grid{
 
-        width:240px;
+        grid-template-columns:1fr;
+
+        gap:25px;
 
     }
 
-    .price-bottom{
+    .pricing-card{
 
-        flex-direction:column;
-        align-items:flex-start;
-        gap:15px;
+        padding:30px;
+
+    }
+
+    .featured{
+
+        transform:none;
+
+    }
+
+    .featured:hover{
+
+        transform:translateY(-8px);
+
+    }
+
+    .comparison-section{
+
+        overflow-x:auto;
+
+    }
+
+    .comparison-section table{
+
+        min-width:700px;
+
+    }
+
+    .comparison-section h2{
+
+        font-size:2rem;
+
+    }
+
+    .pricing-faq h2{
+
+        font-size:2rem;
 
     }
 
     .bottom-cta{
 
-        padding:30px 20px;
+        padding:45px 25px;
+
+    }
+
+    .bottom-cta h2{
+
+        font-size:2rem;
+
+    }
+
+    .bottom-cta p{
+
+        font-size:.95rem;
 
     }
 
 }
 
+/* ======================================
+        SMALL PHONES
+====================================== */
+
 @media(max-width:480px){
 
     .pricing-hero h1{
 
-        font-size:30px;
+        font-size:2.2rem;
+
+    }
+
+    .pricing-badge{
+
+        font-size:.72rem;
+
+        padding:8px 18px;
 
     }
 
     .price{
 
-        font-size:28px;
+        font-size:2.6rem;
 
     }
 
-    .price-card{
+    .pricing-card{
 
-        padding:20px;
+        padding:25px;
+
+    }
+
+    .pricing-card h3{
+
+        font-size:1.6rem;
+
+    }
+
+    .comparison-section h2,
+    .pricing-faq h2,
+    .bottom-cta h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .bottom-cta{
+
+        padding:35px 18px;
+
+    }
+
+    .bottom-cta a{
+
+        width:100%;
 
     }
 
