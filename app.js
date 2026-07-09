@@ -35,6 +35,21 @@ app.get("/services/web-development",(req,res)=>{
     res.render("services/web-development");
 });
 
+app.get("/services/google-ads-management",(req,res)=>{
+    res.render("services/google-ads");
+});
+
+app.get("/services/meta-ads",(req,res)=>{
+    res.render("services/meta-ads");
+});
+
+app.get("/services/email-marketing",(req,res)=>{
+    res.render("services/email-marketing");
+});
+
+app.get("/services/whatsapp-marketing",(req,res)=>{
+    res.render("services/whatsapp-marketing");
+});
 app.listen(port,()=>{
     console.log(`example app listening on port ${port}`);
 })

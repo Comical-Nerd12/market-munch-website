@@ -3,37 +3,61 @@ const services = [
         icon: "ti ti-brand-google",
         title: "SEO Optimization",
         desc: "Rank higher on Google and drive consistent organic traffic.",
-        link:"/services/seo-optimization"
+        link: "/services/seo-optimization"
     },
     {
         icon: "ti ti-speakerphone",
         title: "Social Media Marketing",
         desc: "Grow your audience across Instagram, Facebook and LinkedIn.",
-        link:"/services/socialmediamarketing"
+        link: "/services/socialmediamarketing"
     },
     {
         icon: "ti ti-click",
         title: "Performance Marketing",
         desc: "High-converting Meta and Google Ads with measurable ROI.",
-        link:"/services/performance-marketing"
+        link: "/services/performance-marketing"
+    },
+    {
+        icon: "ti ti-brand-google",
+        title: "Google Ads Management",
+        desc: "Drive qualified leads with expertly managed Google Ads campaigns.",
+        link: "/services/google-ads-management"
+    },
+    {
+        icon: "ti ti-brand-meta",
+        title: "Meta Ads",
+        desc: "Reach your ideal audience through Facebook and Instagram advertising.",
+        link: "/services/meta-ads"
+    },
+    {
+        icon: "ti ti-mail",
+        title: "Email Marketing",
+        desc: "Build customer relationships with targeted email campaigns.",
+        link: "/services/email-marketing"
+    },
+    {
+        icon: "ti ti-brand-whatsapp",
+        title: "WhatsApp Marketing",
+        desc: "Engage customers directly with personalized WhatsApp campaigns.",
+        link: "/services/whatsapp-marketing"
     },
     {
         icon: "ti ti-pencil",
         title: "Content Creation",
         desc: "Creative content that attracts, engages and converts.",
-        link:"/services/content-creation"
+        link: "/services/content-creation"
     },
     {
         icon: "ti ti-chart-bar",
         title: "Analytics",
         desc: "Track every click, lead and conversion with detailed reports.",
-        link:"/services/analytics"
+        link: "/services/analytics"
     },
     {
         icon: "ti ti-device-desktop",
         title: "Website Development",
         desc: "Modern responsive websites designed to convert visitors.",
-        link:"/services/web-development"
+        link: "/services/web-development"
     }
 ];
 
@@ -69,7 +93,7 @@ const testimonials = [
     {
         name:"Varun Dua",
         company:"Barkha International",
-        review:"We wanted more than just a beautiful website—we wanted results. The team delivered a modern website along with a marketing strategy that genuinely helped us reach new customers."
+        review:"We wanted more than just reels. The team showed extraordinary enthusiasm towards the brand and delieverd quality reels. The teamwork was exceptional and they updated us on each step of journey."
     },
     {
         name:"Mayank Jain",

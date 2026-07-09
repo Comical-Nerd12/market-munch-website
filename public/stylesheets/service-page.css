@@ -357,7 +357,7 @@ body::before{
     grid-template-columns:1fr 1.1fr;
     gap:70px;
     align-items:center;
-
+  
     background:#09090f;
 
 }
@@ -377,7 +377,7 @@ body::before{
 }
 
 .showcase-image{
-
+  margin-top: 40px;
     display:flex;
     justify-content:center;
 
@@ -416,7 +416,7 @@ body::before{
     }
 
     .showcase-image{
-
+  margin-top: 40px;
         display:flex;
         justify-content:center;
 
