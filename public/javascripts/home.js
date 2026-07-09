@@ -187,7 +187,9 @@ const homePage = `
             branding and scalable digital strategies.
         </p>
 
-        <a href="#">Connect →</a>
+        <a href="https://wa.me/919996796697?text=Hi! I'm interested in your Basic Plan."
+target="_blank">
+    Connect →</a>
 
     </div>
 
@@ -207,7 +209,9 @@ const homePage = `
             converts visitors into customers.
         </p>
 
-        <a href="#">Connect →</a>
+        <a href="https://wa.me/919996796697?text=Hi! I'm interested in your Basic Plan."
+target="_blank">
+    Connect →</a>
 
     </div>
 
