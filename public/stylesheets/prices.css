@@ -162,6 +162,8 @@
 
     margin-bottom:90px;
 
+    align-items: start;
+
 }
 
 /* ===========================
@@ -541,7 +543,14 @@
 
     overflow:hidden;
 
-    background:rgba(192, 27, 234, 0.03);
+    background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.06),
+    rgba(255,255,255,.02)
+);
+
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
 
     backdrop-filter:blur(18px);
 
